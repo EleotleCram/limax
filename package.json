@@ -11,6 +11,7 @@
     "node": ">=0.10"
   },
   "scripts": {
+    "browserify": "mkdir -p target; browserify boot.js > target/limax-bundle.js",
     "test": "node test/unit"
   },
   "keywords": [
@@ -40,5 +41,8 @@
     "hepburn": "^1.0.0",
     "pinyin": "2.6.2",
     "speakingurl": "^10.0.0"
+  },
+  "devDependencies": {
+    "browserify": "^13.1.1"
   }
 }
